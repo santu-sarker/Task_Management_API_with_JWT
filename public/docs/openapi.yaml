@@ -1,0 +1,547 @@
+openapi: 3.0.3
+info:
+  title: Task_Management_API_with_JWT
+  description: ''
+  version: 1.0.0
+servers:
+  -
+    url: 'http://127.0.0.1:8000'
+paths:
+  /api/auth/login:
+    post:
+      summary: ''
+      operationId: postApiAuthLogin
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Auth
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                  description: 'Must be a valid email address.'
+                  example: qschultz@example.net
+                password:
+                  type: string
+                  description: ''
+                  example: '/1B_N-lhy5n`*#BL'
+              required:
+                - email
+                - password
+      security: []
+  /api/auth/register:
+    post:
+      summary: ''
+      operationId: postApiAuthRegister
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Auth
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: jjlthwfihtdejjefzeomp
+                email:
+                  type: string
+                  description: 'Must be a valid email address. Must not be greater than 255 characters.'
+                  example: koconnell@example.org
+                password:
+                  type: string
+                  description: 'Must be at least 6 characters.'
+                  example: 'lE-`z:~j257Zii'
+              required:
+                - name
+                - email
+                - password
+      security: []
+  /api/auth/refresh:
+    post:
+      summary: ''
+      operationId: postApiAuthRefresh
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Auth
+      security: []
+  /api/auth/logout:
+    post:
+      summary: ''
+      operationId: postApiAuthLogout
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Auth
+      security: []
+  /api/categories:
+    get:
+      summary: ''
+      operationId: getApiCategories
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  data:
+                    -
+                      id: 16
+                      name: temporibus
+                      slug: temporibus
+                      description: 'Fugiat iste corrupti ex aperiam. At et aliquid sunt dolorum amet. Cupiditate adipisci laborum aut explicabo cumque enim corporis.'
+                      created_at: '2024-08-25T15:55:53.000000Z'
+                      updated_at: '2024-08-25T15:55:53.000000Z'
+                    -
+                      id: 17
+                      name: officiis
+                      slug: officiis
+                      description: 'Quia neque dolores voluptas sunt. Omnis dolores ut voluptatem laboriosam.'
+                      created_at: '2024-08-25T15:55:53.000000Z'
+                      updated_at: '2024-08-25T15:55:53.000000Z'
+                properties:
+                  data:
+                    type: array
+                    example:
+                      -
+                        id: 16
+                        name: temporibus
+                        slug: temporibus
+                        description: 'Fugiat iste corrupti ex aperiam. At et aliquid sunt dolorum amet. Cupiditate adipisci laborum aut explicabo cumque enim corporis.'
+                        created_at: '2024-08-25T15:55:53.000000Z'
+                        updated_at: '2024-08-25T15:55:53.000000Z'
+                      -
+                        id: 17
+                        name: officiis
+                        slug: officiis
+                        description: 'Quia neque dolores voluptas sunt. Omnis dolores ut voluptatem laboriosam.'
+                        created_at: '2024-08-25T15:55:53.000000Z'
+                        updated_at: '2024-08-25T15:55:53.000000Z'
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                          example: 16
+                        name:
+                          type: string
+                          example: temporibus
+                        slug:
+                          type: string
+                          example: temporibus
+                        description:
+                          type: string
+                          example: 'Fugiat iste corrupti ex aperiam. At et aliquid sunt dolorum amet. Cupiditate adipisci laborum aut explicabo cumque enim corporis.'
+                        created_at:
+                          type: string
+                          example: '2024-08-25T15:55:53.000000Z'
+                        updated_at:
+                          type: string
+                          example: '2024-08-25T15:55:53.000000Z'
+      tags:
+        - Category
+      security: []
+    post:
+      summary: ''
+      operationId: postApiCategories
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Category
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: cjmzdipilz
+                description:
+                  type: string
+                  description: 'Must not be greater than 700 characters.'
+                  example: 'Debitis quas officia quaerat exercitationem dolor at veritatis nostrum.'
+              required:
+                - name
+      security: []
+  '/api/categories/{id}':
+    get:
+      summary: ''
+      operationId: getApiCategoriesId
+      description: ''
+      parameters: []
+      responses:
+        500:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  error: 'The route api/categories/1 could not be found.'
+                properties:
+                  error:
+                    type: string
+                    example: 'The route api/categories/1 could not be found.'
+      tags:
+        - Category
+      security: []
+    put:
+      summary: ''
+      operationId: putApiCategoriesId
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Category
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: ybqbobkhbaywkmmjujee
+                description:
+                  type: string
+                  description: 'Must not be greater than 700 characters.'
+                  example: 'Ab fuga incidunt cum sed aut aperiam est aut.'
+      security: []
+    delete:
+      summary: ''
+      operationId: deleteApiCategoriesId
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Category
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the category.'
+        example: 1
+        required: true
+        schema:
+          type: integer
+  /api/auth/test:
+    get:
+      summary: ''
+      operationId: getApiAuthTest
+      description: ''
+      parameters: []
+      responses:
+        500:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  error: 'The route api/auth/test could not be found.'
+                properties:
+                  error:
+                    type: string
+                    example: 'The route api/auth/test could not be found.'
+      tags:
+        - Endpoints
+      security: []
+  /api/tasks:
+    get:
+      summary: ''
+      operationId: getApiTasks
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  data:
+                    -
+                      id: 111
+                      user_id: 12
+                      category_id: 4
+                      title: "Hatter. 'I deny it!' said."
+                      description: 'Tempore qui deserunt consequuntur eos. Tempore voluptatem quia excepturi sint nulla. Saepe voluptatem et eos dolorem qui deleniti quis enim. Aut quod facere aut atque et quos commodi.'
+                      due_date: '2024-09-22'
+                      status: pending
+                      created_at: '2024-08-25T15:55:53.000000Z'
+                      updated_at: '2024-08-25T15:55:53.000000Z'
+                      user:
+                        id: 12
+                        name: 'Prof. Dulce Spinka'
+                        email: rosanna.hackett@example.com
+                        email_verified_at: '2024-08-25T15:55:53.000000Z'
+                        created_at: '2024-08-25T15:55:53.000000Z'
+                        updated_at: '2024-08-25T15:55:53.000000Z'
+                    -
+                      id: 112
+                      user_id: 13
+                      category_id: 9
+                      title: "Duchess: 'what a clear way."
+                      description: 'Eius dolores cumque non. Reprehenderit quos dolore nostrum culpa quia facere. Suscipit itaque debitis magnam.'
+                      due_date: '2024-09-06'
+                      status: pending
+                      created_at: '2024-08-25T15:55:53.000000Z'
+                      updated_at: '2024-08-25T15:55:53.000000Z'
+                      user:
+                        id: 13
+                        name: 'Prof. Ernestine Nienow IV'
+                        email: haley.cary@example.net
+                        email_verified_at: '2024-08-25T15:55:53.000000Z'
+                        created_at: '2024-08-25T15:55:53.000000Z'
+                        updated_at: '2024-08-25T15:55:53.000000Z'
+                properties:
+                  data:
+                    type: array
+                    example:
+                      -
+                        id: 111
+                        user_id: 12
+                        category_id: 4
+                        title: "Hatter. 'I deny it!' said."
+                        description: 'Tempore qui deserunt consequuntur eos. Tempore voluptatem quia excepturi sint nulla. Saepe voluptatem et eos dolorem qui deleniti quis enim. Aut quod facere aut atque et quos commodi.'
+                        due_date: '2024-09-22'
+                        status: pending
+                        created_at: '2024-08-25T15:55:53.000000Z'
+                        updated_at: '2024-08-25T15:55:53.000000Z'
+                        user:
+                          id: 12
+                          name: 'Prof. Dulce Spinka'
+                          email: rosanna.hackett@example.com
+                          email_verified_at: '2024-08-25T15:55:53.000000Z'
+                          created_at: '2024-08-25T15:55:53.000000Z'
+                          updated_at: '2024-08-25T15:55:53.000000Z'
+                      -
+                        id: 112
+                        user_id: 13
+                        category_id: 9
+                        title: "Duchess: 'what a clear way."
+                        description: 'Eius dolores cumque non. Reprehenderit quos dolore nostrum culpa quia facere. Suscipit itaque debitis magnam.'
+                        due_date: '2024-09-06'
+                        status: pending
+                        created_at: '2024-08-25T15:55:53.000000Z'
+                        updated_at: '2024-08-25T15:55:53.000000Z'
+                        user:
+                          id: 13
+                          name: 'Prof. Ernestine Nienow IV'
+                          email: haley.cary@example.net
+                          email_verified_at: '2024-08-25T15:55:53.000000Z'
+                          created_at: '2024-08-25T15:55:53.000000Z'
+                          updated_at: '2024-08-25T15:55:53.000000Z'
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                          example: 111
+                        user_id:
+                          type: integer
+                          example: 12
+                        category_id:
+                          type: integer
+                          example: 4
+                        title:
+                          type: string
+                          example: "Hatter. 'I deny it!' said."
+                        description:
+                          type: string
+                          example: 'Tempore qui deserunt consequuntur eos. Tempore voluptatem quia excepturi sint nulla. Saepe voluptatem et eos dolorem qui deleniti quis enim. Aut quod facere aut atque et quos commodi.'
+                        due_date:
+                          type: string
+                          example: '2024-09-22'
+                        status:
+                          type: string
+                          example: pending
+                        created_at:
+                          type: string
+                          example: '2024-08-25T15:55:53.000000Z'
+                        updated_at:
+                          type: string
+                          example: '2024-08-25T15:55:53.000000Z'
+                        user:
+                          type: object
+                          properties:
+                            id:
+                              type: integer
+                              example: 12
+                            name:
+                              type: string
+                              example: 'Prof. Dulce Spinka'
+                            email:
+                              type: string
+                              example: rosanna.hackett@example.com
+                            email_verified_at:
+                              type: string
+                              example: '2024-08-25T15:55:53.000000Z'
+                            created_at:
+                              type: string
+                              example: '2024-08-25T15:55:53.000000Z'
+                            updated_at:
+                              type: string
+                              example: '2024-08-25T15:55:53.000000Z'
+      tags:
+        - Task
+      security: []
+    post:
+      summary: ''
+      operationId: postApiTasks
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Task
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: yrvtjionkpbln
+                description:
+                  type: string
+                  description: ''
+                  example: 'Sunt quod nihil maiores quis ea vel.'
+                due_date:
+                  type: string
+                  description: 'Must be a valid date. Must be a date after or equal to <code>today</code>.'
+                  example: '2051-08-29'
+                status:
+                  type: string
+                  description: ''
+                  example: pending
+                  enum:
+                    - pending
+                    - completed
+                category_id:
+                  type: string
+                  description: ''
+                  example: null
+              required:
+                - title
+      security: []
+  '/api/tasks/{id}':
+    get:
+      summary: ''
+      operationId: getApiTasksId
+      description: ''
+      parameters: []
+      responses:
+        500:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  error: 'The route api/tasks/1 could not be found.'
+                properties:
+                  error:
+                    type: string
+                    example: 'The route api/tasks/1 could not be found.'
+      tags:
+        - Task
+      security: []
+    put:
+      summary: ''
+      operationId: putApiTasksId
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Task
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: kqybcworuwtwwbwknyiwsaykx
+                description:
+                  type: string
+                  description: ''
+                  example: 'Perferendis laudantium natus nobis sint.'
+                due_date:
+                  type: string
+                  description: 'Must be a valid date. Must be a date after or equal to <code>today</code>.'
+                  example: '2112-06-20'
+                status:
+                  type: string
+                  description: ''
+                  example: pending
+                  enum:
+                    - pending
+                    - completed
+                category_id:
+                  type: string
+                  description: ''
+                  example: null
+      security: []
+    delete:
+      summary: ''
+      operationId: deleteApiTasksId
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Task
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the task.'
+        example: 1
+        required: true
+        schema:
+          type: integer
+tags:
+  -
+    name: Auth
+    description: "\nAuth related APIs"
+  -
+    name: Category
+    description: "\nAPIs to manage categories"
+  -
+    name: Endpoints
+    description: ''
+  -
+    name: Task
+    description: "\nAPIs to managing task"
