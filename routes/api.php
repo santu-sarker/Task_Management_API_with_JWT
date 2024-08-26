@@ -26,12 +26,6 @@ Route::middleware(['throttle:api'])->prefix('auth')->group(function () {
 
         Route::post('refresh', [JWTAuthController::class, 'refresh']);
         Route::post('logout', [JWTAuthController::class, 'logout']);
-
-        Route::get("/test", function () {
-            return response()->json([
-                "data" => "success",
-            ]);
-        });
     });
 });
 

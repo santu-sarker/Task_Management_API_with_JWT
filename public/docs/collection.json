@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "Task_Management_API_with_JWT",
-        "_postman_id": "c461542e-d2ec-4e9c-ba11-3c2ec8528b7c",
+        "_postman_id": "78cf4f16-7ae2-4d2d-88b4-642d26db123f",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -41,12 +41,9 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"qschultz@example.net\",\"password\":\"\\\/1B_N-lhy5n`*#BL\"}"
+                            "raw": "{\"email\":\"merle.gaylord@example.org\",\"password\":\"}*j9G\\\\2q$-Ppi;l\"}"
                         },
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
+                        "description": ""
                     },
                     "response": []
                 },
@@ -72,12 +69,9 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"jjlthwfihtdejjefzeomp\",\"email\":\"koconnell@example.org\",\"password\":\"lE-`z:~j257Zii\"}"
+                            "raw": "{\"name\":\"whqdxikigzoehtq\",\"email\":\"verdie.veum@example.net\",\"password\":\"BzC.RL0{bwdT2C=b(}:y\"}"
                         },
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
+                        "description": ""
                     },
                     "response": []
                 },
@@ -102,10 +96,7 @@
                             }
                         ],
                         "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
+                        "description": ""
                     },
                     "response": []
                 },
@@ -130,10 +121,7 @@
                             }
                         ],
                         "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
+                        "description": ""
                     },
                     "response": []
                 }
@@ -164,16 +152,13 @@
                             }
                         ],
                         "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
+                        "description": ""
                     },
                     "response": [
                         {
                             "header": [],
                             "code": 200,
-                            "body": "{\"data\":[{\"id\":16,\"name\":\"temporibus\",\"slug\":\"temporibus\",\"description\":\"Fugiat iste corrupti ex aperiam. At et aliquid sunt dolorum amet. Cupiditate adipisci laborum aut explicabo cumque enim corporis.\",\"created_at\":\"2024-08-25T15:55:53.000000Z\",\"updated_at\":\"2024-08-25T15:55:53.000000Z\"},{\"id\":17,\"name\":\"officiis\",\"slug\":\"officiis\",\"description\":\"Quia neque dolores voluptas sunt. Omnis dolores ut voluptatem laboriosam.\",\"created_at\":\"2024-08-25T15:55:53.000000Z\",\"updated_at\":\"2024-08-25T15:55:53.000000Z\"}]}",
+                            "body": "{\"data\":[{\"id\":20,\"name\":\"adipisci\",\"slug\":\"adipisci\",\"description\":\"Qui atque porro quia et. Reprehenderit ut fuga qui consequatur exercitationem rem ut. Soluta qui corporis perferendis. Laudantium aperiam ipsum facilis quaerat sint veritatis dicta.\",\"created_at\":\"2024-08-26T11:34:29.000000Z\",\"updated_at\":\"2024-08-26T11:34:29.000000Z\"},{\"id\":21,\"name\":\"consequuntur\",\"slug\":\"consequuntur\",\"description\":\"Eveniet occaecati quasi debitis soluta quos. Minima perferendis aut enim sequi iusto nesciunt. Minus modi aperiam qui ullam unde consequatur. Sunt et nihil incidunt atque sed id nihil.\",\"created_at\":\"2024-08-26T11:34:29.000000Z\",\"updated_at\":\"2024-08-26T11:34:29.000000Z\"}]}",
                             "name": ""
                         }
                     ]
@@ -200,12 +185,9 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"cjmzdipilz\",\"description\":\"Debitis quas officia quaerat exercitationem dolor at veritatis nostrum.\"}"
+                            "raw": "{\"name\":\"povpehbkwywga\",\"description\":\"In sit saepe totam qui neque perferendis sunt suscipit.\"}"
                         },
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
+                        "description": ""
                     },
                     "response": []
                 },
@@ -238,10 +220,7 @@
                             }
                         ],
                         "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
+                        "description": ""
                     },
                     "response": [
                         {
@@ -295,12 +274,9 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"ybqbobkhbaywkmmjujee\",\"description\":\"Ab fuga incidunt cum sed aut aperiam est aut.\"}"
+                            "raw": "{\"name\":\"hjckuibimuoxm\",\"description\":\"Excepturi et voluptatem non consequatur.\"}"
                         },
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
+                        "description": ""
                     },
                     "response": []
                 },
@@ -333,66 +309,9 @@
                             }
                         ],
                         "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
+                        "description": ""
                     },
                     "response": []
-                }
-            ]
-        },
-        {
-            "name": "Endpoints",
-            "description": "",
-            "item": [
-                {
-                    "name": "GET api\/auth\/test",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "api\/auth\/test",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/api\/auth\/test"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": [
-                        {
-                            "header": [
-                                {
-                                    "key": "cache-control",
-                                    "value": "no-cache, private"
-                                },
-                                {
-                                    "key": "content-type",
-                                    "value": "application\/json"
-                                },
-                                {
-                                    "key": "access-control-allow-origin",
-                                    "value": "*"
-                                }
-                            ],
-                            "code": 500,
-                            "body": "{\"error\":\"The route api\\\/auth\\\/test could not be found.\"}",
-                            "name": ""
-                        }
-                    ]
                 }
             ]
         },
@@ -421,16 +340,13 @@
                             }
                         ],
                         "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
+                        "description": ""
                     },
                     "response": [
                         {
                             "header": [],
                             "code": 200,
-                            "body": "{\"data\":[{\"id\":111,\"user_id\":12,\"category_id\":4,\"title\":\"Hatter. 'I deny it!' said.\",\"description\":\"Tempore qui deserunt consequuntur eos. Tempore voluptatem quia excepturi sint nulla. Saepe voluptatem et eos dolorem qui deleniti quis enim. Aut quod facere aut atque et quos commodi.\",\"due_date\":\"2024-09-22\",\"status\":\"pending\",\"created_at\":\"2024-08-25T15:55:53.000000Z\",\"updated_at\":\"2024-08-25T15:55:53.000000Z\",\"user\":{\"id\":12,\"name\":\"Prof. Dulce Spinka\",\"email\":\"rosanna.hackett@example.com\",\"email_verified_at\":\"2024-08-25T15:55:53.000000Z\",\"created_at\":\"2024-08-25T15:55:53.000000Z\",\"updated_at\":\"2024-08-25T15:55:53.000000Z\"}},{\"id\":112,\"user_id\":13,\"category_id\":9,\"title\":\"Duchess: 'what a clear way.\",\"description\":\"Eius dolores cumque non. Reprehenderit quos dolore nostrum culpa quia facere. Suscipit itaque debitis magnam.\",\"due_date\":\"2024-09-06\",\"status\":\"pending\",\"created_at\":\"2024-08-25T15:55:53.000000Z\",\"updated_at\":\"2024-08-25T15:55:53.000000Z\",\"user\":{\"id\":13,\"name\":\"Prof. Ernestine Nienow IV\",\"email\":\"haley.cary@example.net\",\"email_verified_at\":\"2024-08-25T15:55:53.000000Z\",\"created_at\":\"2024-08-25T15:55:53.000000Z\",\"updated_at\":\"2024-08-25T15:55:53.000000Z\"}}]}",
+                            "body": "{\"data\":[{\"id\":115,\"user_id\":16,\"category_id\":9,\"title\":\"Queen, in a Little Bill It.\",\"description\":\"Sunt ea officia aut voluptas vero. Qui laudantium quaerat autem veniam libero. Nihil et illo aut repellat delectus aut culpa.\",\"due_date\":\"2024-09-15\",\"status\":\"pending\",\"created_at\":\"2024-08-26T11:34:28.000000Z\",\"updated_at\":\"2024-08-26T11:34:28.000000Z\",\"user\":{\"id\":16,\"name\":\"Ms. Duane Boehm I\",\"email\":\"delphine20@example.com\",\"email_verified_at\":\"2024-08-26T11:34:28.000000Z\",\"created_at\":\"2024-08-26T11:34:28.000000Z\",\"updated_at\":\"2024-08-26T11:34:28.000000Z\"}},{\"id\":116,\"user_id\":17,\"category_id\":6,\"title\":\"I've got to the porpoise.\",\"description\":\"Enim molestiae rem consequatur minima voluptate qui. Iure nisi voluptatum voluptate rem fugiat corrupti.\",\"due_date\":\"2024-09-07\",\"status\":\"pending\",\"created_at\":\"2024-08-26T11:34:28.000000Z\",\"updated_at\":\"2024-08-26T11:34:28.000000Z\",\"user\":{\"id\":17,\"name\":\"Arnold Wilkinson\",\"email\":\"astrid.bayer@example.net\",\"email_verified_at\":\"2024-08-26T11:34:28.000000Z\",\"created_at\":\"2024-08-26T11:34:28.000000Z\",\"updated_at\":\"2024-08-26T11:34:28.000000Z\"}}]}",
                             "name": ""
                         }
                     ]
@@ -457,12 +373,9 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"title\":\"yrvtjionkpbln\",\"description\":\"Sunt quod nihil maiores quis ea vel.\",\"due_date\":\"2051-08-29\",\"status\":\"pending\"}"
+                            "raw": "{\"title\":\"obhxck\",\"description\":\"Est aut quia dolores officiis officiis atque eligendi.\",\"due_date\":\"2038-02-18\",\"status\":\"completed\"}"
                         },
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
+                        "description": ""
                     },
                     "response": []
                 },
@@ -478,7 +391,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "1",
+                                    "value": "7",
                                     "description": "The ID of the task."
                                 }
                             ]
@@ -495,10 +408,7 @@
                             }
                         ],
                         "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
+                        "description": ""
                     },
                     "response": [
                         {
@@ -517,7 +427,7 @@
                                 }
                             ],
                             "code": 500,
-                            "body": "{\"error\":\"The route api\\\/tasks\\\/1 could not be found.\"}",
+                            "body": "{\"error\":\"The route api\\\/tasks\\\/7 could not be found.\"}",
                             "name": ""
                         }
                     ]
@@ -534,7 +444,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "1",
+                                    "value": "7",
                                     "description": "The ID of the task."
                                 }
                             ]
@@ -552,12 +462,9 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"title\":\"kqybcworuwtwwbwknyiwsaykx\",\"description\":\"Perferendis laudantium natus nobis sint.\",\"due_date\":\"2112-06-20\",\"status\":\"pending\"}"
+                            "raw": "{\"title\":\"fcpzuikxvzvjhiazmyqe\",\"description\":\"Deleniti autem itaque laboriosam ut nisi non nihil.\",\"due_date\":\"2103-09-21\",\"status\":\"completed\"}"
                         },
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
+                        "description": ""
                     },
                     "response": []
                 },
@@ -573,7 +480,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "1",
+                                    "value": "7",
                                     "description": "The ID of the task."
                                 }
                             ]
@@ -590,10 +497,7 @@
                             }
                         ],
                         "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
+                        "description": ""
                     },
                     "response": []
                 }
@@ -601,6 +505,12 @@
         }
     ],
     "auth": {
-        "type": "noauth"
+        "type": "bearer",
+        "bearer": [
+            {
+                "key": "key",
+                "type": "string"
+            }
+        ]
     }
 }

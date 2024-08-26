@@ -26,15 +26,14 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: qschultz@example.net
+                  example: merle.gaylord@example.org
                 password:
                   type: string
                   description: ''
-                  example: '/1B_N-lhy5n`*#BL'
+                  example: '}*j9G\2q$-Ppi;l'
               required:
                 - email
                 - password
-      security: []
   /api/auth/register:
     post:
       summary: ''
@@ -54,20 +53,19 @@ paths:
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: jjlthwfihtdejjefzeomp
+                  example: whqdxikigzoehtq
                 email:
                   type: string
                   description: 'Must be a valid email address. Must not be greater than 255 characters.'
-                  example: koconnell@example.org
+                  example: verdie.veum@example.net
                 password:
                   type: string
                   description: 'Must be at least 6 characters.'
-                  example: 'lE-`z:~j257Zii'
+                  example: 'BzC.RL0{bwdT2C=b(}:y'
               required:
                 - name
                 - email
                 - password
-      security: []
   /api/auth/refresh:
     post:
       summary: ''
@@ -77,7 +75,6 @@ paths:
       responses: {  }
       tags:
         - Auth
-      security: []
   /api/auth/logout:
     post:
       summary: ''
@@ -87,7 +84,6 @@ paths:
       responses: {  }
       tags:
         - Auth
-      security: []
   /api/categories:
     get:
       summary: ''
@@ -104,61 +100,60 @@ paths:
                 example:
                   data:
                     -
-                      id: 16
-                      name: temporibus
-                      slug: temporibus
-                      description: 'Fugiat iste corrupti ex aperiam. At et aliquid sunt dolorum amet. Cupiditate adipisci laborum aut explicabo cumque enim corporis.'
-                      created_at: '2024-08-25T15:55:53.000000Z'
-                      updated_at: '2024-08-25T15:55:53.000000Z'
+                      id: 20
+                      name: adipisci
+                      slug: adipisci
+                      description: 'Qui atque porro quia et. Reprehenderit ut fuga qui consequatur exercitationem rem ut. Soluta qui corporis perferendis. Laudantium aperiam ipsum facilis quaerat sint veritatis dicta.'
+                      created_at: '2024-08-26T11:34:29.000000Z'
+                      updated_at: '2024-08-26T11:34:29.000000Z'
                     -
-                      id: 17
-                      name: officiis
-                      slug: officiis
-                      description: 'Quia neque dolores voluptas sunt. Omnis dolores ut voluptatem laboriosam.'
-                      created_at: '2024-08-25T15:55:53.000000Z'
-                      updated_at: '2024-08-25T15:55:53.000000Z'
+                      id: 21
+                      name: consequuntur
+                      slug: consequuntur
+                      description: 'Eveniet occaecati quasi debitis soluta quos. Minima perferendis aut enim sequi iusto nesciunt. Minus modi aperiam qui ullam unde consequatur. Sunt et nihil incidunt atque sed id nihil.'
+                      created_at: '2024-08-26T11:34:29.000000Z'
+                      updated_at: '2024-08-26T11:34:29.000000Z'
                 properties:
                   data:
                     type: array
                     example:
                       -
-                        id: 16
-                        name: temporibus
-                        slug: temporibus
-                        description: 'Fugiat iste corrupti ex aperiam. At et aliquid sunt dolorum amet. Cupiditate adipisci laborum aut explicabo cumque enim corporis.'
-                        created_at: '2024-08-25T15:55:53.000000Z'
-                        updated_at: '2024-08-25T15:55:53.000000Z'
+                        id: 20
+                        name: adipisci
+                        slug: adipisci
+                        description: 'Qui atque porro quia et. Reprehenderit ut fuga qui consequatur exercitationem rem ut. Soluta qui corporis perferendis. Laudantium aperiam ipsum facilis quaerat sint veritatis dicta.'
+                        created_at: '2024-08-26T11:34:29.000000Z'
+                        updated_at: '2024-08-26T11:34:29.000000Z'
                       -
-                        id: 17
-                        name: officiis
-                        slug: officiis
-                        description: 'Quia neque dolores voluptas sunt. Omnis dolores ut voluptatem laboriosam.'
-                        created_at: '2024-08-25T15:55:53.000000Z'
-                        updated_at: '2024-08-25T15:55:53.000000Z'
+                        id: 21
+                        name: consequuntur
+                        slug: consequuntur
+                        description: 'Eveniet occaecati quasi debitis soluta quos. Minima perferendis aut enim sequi iusto nesciunt. Minus modi aperiam qui ullam unde consequatur. Sunt et nihil incidunt atque sed id nihil.'
+                        created_at: '2024-08-26T11:34:29.000000Z'
+                        updated_at: '2024-08-26T11:34:29.000000Z'
                     items:
                       type: object
                       properties:
                         id:
                           type: integer
-                          example: 16
+                          example: 20
                         name:
                           type: string
-                          example: temporibus
+                          example: adipisci
                         slug:
                           type: string
-                          example: temporibus
+                          example: adipisci
                         description:
                           type: string
-                          example: 'Fugiat iste corrupti ex aperiam. At et aliquid sunt dolorum amet. Cupiditate adipisci laborum aut explicabo cumque enim corporis.'
+                          example: 'Qui atque porro quia et. Reprehenderit ut fuga qui consequatur exercitationem rem ut. Soluta qui corporis perferendis. Laudantium aperiam ipsum facilis quaerat sint veritatis dicta.'
                         created_at:
                           type: string
-                          example: '2024-08-25T15:55:53.000000Z'
+                          example: '2024-08-26T11:34:29.000000Z'
                         updated_at:
                           type: string
-                          example: '2024-08-25T15:55:53.000000Z'
+                          example: '2024-08-26T11:34:29.000000Z'
       tags:
         - Category
-      security: []
     post:
       summary: ''
       operationId: postApiCategories
@@ -177,14 +172,13 @@ paths:
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: cjmzdipilz
+                  example: povpehbkwywga
                 description:
                   type: string
                   description: 'Must not be greater than 700 characters.'
-                  example: 'Debitis quas officia quaerat exercitationem dolor at veritatis nostrum.'
+                  example: 'In sit saepe totam qui neque perferendis sunt suscipit.'
               required:
                 - name
-      security: []
   '/api/categories/{id}':
     get:
       summary: ''
@@ -206,7 +200,6 @@ paths:
                     example: 'The route api/categories/1 could not be found.'
       tags:
         - Category
-      security: []
     put:
       summary: ''
       operationId: putApiCategoriesId
@@ -225,12 +218,11 @@ paths:
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: ybqbobkhbaywkmmjujee
+                  example: hjckuibimuoxm
                 description:
                   type: string
                   description: 'Must not be greater than 700 characters.'
-                  example: 'Ab fuga incidunt cum sed aut aperiam est aut.'
-      security: []
+                  example: 'Excepturi et voluptatem non consequatur.'
     delete:
       summary: ''
       operationId: deleteApiCategoriesId
@@ -239,7 +231,6 @@ paths:
       responses: {  }
       tags:
         - Category
-      security: []
     parameters:
       -
         in: path
@@ -249,28 +240,6 @@ paths:
         required: true
         schema:
           type: integer
-  /api/auth/test:
-    get:
-      summary: ''
-      operationId: getApiAuthTest
-      description: ''
-      parameters: []
-      responses:
-        500:
-          description: ''
-          content:
-            application/json:
-              schema:
-                type: object
-                example:
-                  error: 'The route api/auth/test could not be found.'
-                properties:
-                  error:
-                    type: string
-                    example: 'The route api/auth/test could not be found.'
-      tags:
-        - Endpoints
-      security: []
   /api/tasks:
     get:
       summary: ''
@@ -287,131 +256,130 @@ paths:
                 example:
                   data:
                     -
-                      id: 111
-                      user_id: 12
-                      category_id: 4
-                      title: "Hatter. 'I deny it!' said."
-                      description: 'Tempore qui deserunt consequuntur eos. Tempore voluptatem quia excepturi sint nulla. Saepe voluptatem et eos dolorem qui deleniti quis enim. Aut quod facere aut atque et quos commodi.'
-                      due_date: '2024-09-22'
-                      status: pending
-                      created_at: '2024-08-25T15:55:53.000000Z'
-                      updated_at: '2024-08-25T15:55:53.000000Z'
-                      user:
-                        id: 12
-                        name: 'Prof. Dulce Spinka'
-                        email: rosanna.hackett@example.com
-                        email_verified_at: '2024-08-25T15:55:53.000000Z'
-                        created_at: '2024-08-25T15:55:53.000000Z'
-                        updated_at: '2024-08-25T15:55:53.000000Z'
-                    -
-                      id: 112
-                      user_id: 13
+                      id: 115
+                      user_id: 16
                       category_id: 9
-                      title: "Duchess: 'what a clear way."
-                      description: 'Eius dolores cumque non. Reprehenderit quos dolore nostrum culpa quia facere. Suscipit itaque debitis magnam.'
-                      due_date: '2024-09-06'
+                      title: 'Queen, in a Little Bill It.'
+                      description: 'Sunt ea officia aut voluptas vero. Qui laudantium quaerat autem veniam libero. Nihil et illo aut repellat delectus aut culpa.'
+                      due_date: '2024-09-15'
                       status: pending
-                      created_at: '2024-08-25T15:55:53.000000Z'
-                      updated_at: '2024-08-25T15:55:53.000000Z'
+                      created_at: '2024-08-26T11:34:28.000000Z'
+                      updated_at: '2024-08-26T11:34:28.000000Z'
                       user:
-                        id: 13
-                        name: 'Prof. Ernestine Nienow IV'
-                        email: haley.cary@example.net
-                        email_verified_at: '2024-08-25T15:55:53.000000Z'
-                        created_at: '2024-08-25T15:55:53.000000Z'
-                        updated_at: '2024-08-25T15:55:53.000000Z'
+                        id: 16
+                        name: 'Ms. Duane Boehm I'
+                        email: delphine20@example.com
+                        email_verified_at: '2024-08-26T11:34:28.000000Z'
+                        created_at: '2024-08-26T11:34:28.000000Z'
+                        updated_at: '2024-08-26T11:34:28.000000Z'
+                    -
+                      id: 116
+                      user_id: 17
+                      category_id: 6
+                      title: "I've got to the porpoise."
+                      description: 'Enim molestiae rem consequatur minima voluptate qui. Iure nisi voluptatum voluptate rem fugiat corrupti.'
+                      due_date: '2024-09-07'
+                      status: pending
+                      created_at: '2024-08-26T11:34:28.000000Z'
+                      updated_at: '2024-08-26T11:34:28.000000Z'
+                      user:
+                        id: 17
+                        name: 'Arnold Wilkinson'
+                        email: astrid.bayer@example.net
+                        email_verified_at: '2024-08-26T11:34:28.000000Z'
+                        created_at: '2024-08-26T11:34:28.000000Z'
+                        updated_at: '2024-08-26T11:34:28.000000Z'
                 properties:
                   data:
                     type: array
                     example:
                       -
-                        id: 111
-                        user_id: 12
-                        category_id: 4
-                        title: "Hatter. 'I deny it!' said."
-                        description: 'Tempore qui deserunt consequuntur eos. Tempore voluptatem quia excepturi sint nulla. Saepe voluptatem et eos dolorem qui deleniti quis enim. Aut quod facere aut atque et quos commodi.'
-                        due_date: '2024-09-22'
-                        status: pending
-                        created_at: '2024-08-25T15:55:53.000000Z'
-                        updated_at: '2024-08-25T15:55:53.000000Z'
-                        user:
-                          id: 12
-                          name: 'Prof. Dulce Spinka'
-                          email: rosanna.hackett@example.com
-                          email_verified_at: '2024-08-25T15:55:53.000000Z'
-                          created_at: '2024-08-25T15:55:53.000000Z'
-                          updated_at: '2024-08-25T15:55:53.000000Z'
-                      -
-                        id: 112
-                        user_id: 13
+                        id: 115
+                        user_id: 16
                         category_id: 9
-                        title: "Duchess: 'what a clear way."
-                        description: 'Eius dolores cumque non. Reprehenderit quos dolore nostrum culpa quia facere. Suscipit itaque debitis magnam.'
-                        due_date: '2024-09-06'
+                        title: 'Queen, in a Little Bill It.'
+                        description: 'Sunt ea officia aut voluptas vero. Qui laudantium quaerat autem veniam libero. Nihil et illo aut repellat delectus aut culpa.'
+                        due_date: '2024-09-15'
                         status: pending
-                        created_at: '2024-08-25T15:55:53.000000Z'
-                        updated_at: '2024-08-25T15:55:53.000000Z'
+                        created_at: '2024-08-26T11:34:28.000000Z'
+                        updated_at: '2024-08-26T11:34:28.000000Z'
                         user:
-                          id: 13
-                          name: 'Prof. Ernestine Nienow IV'
-                          email: haley.cary@example.net
-                          email_verified_at: '2024-08-25T15:55:53.000000Z'
-                          created_at: '2024-08-25T15:55:53.000000Z'
-                          updated_at: '2024-08-25T15:55:53.000000Z'
+                          id: 16
+                          name: 'Ms. Duane Boehm I'
+                          email: delphine20@example.com
+                          email_verified_at: '2024-08-26T11:34:28.000000Z'
+                          created_at: '2024-08-26T11:34:28.000000Z'
+                          updated_at: '2024-08-26T11:34:28.000000Z'
+                      -
+                        id: 116
+                        user_id: 17
+                        category_id: 6
+                        title: "I've got to the porpoise."
+                        description: 'Enim molestiae rem consequatur minima voluptate qui. Iure nisi voluptatum voluptate rem fugiat corrupti.'
+                        due_date: '2024-09-07'
+                        status: pending
+                        created_at: '2024-08-26T11:34:28.000000Z'
+                        updated_at: '2024-08-26T11:34:28.000000Z'
+                        user:
+                          id: 17
+                          name: 'Arnold Wilkinson'
+                          email: astrid.bayer@example.net
+                          email_verified_at: '2024-08-26T11:34:28.000000Z'
+                          created_at: '2024-08-26T11:34:28.000000Z'
+                          updated_at: '2024-08-26T11:34:28.000000Z'
                     items:
                       type: object
                       properties:
                         id:
                           type: integer
-                          example: 111
+                          example: 115
                         user_id:
                           type: integer
-                          example: 12
+                          example: 16
                         category_id:
                           type: integer
-                          example: 4
+                          example: 9
                         title:
                           type: string
-                          example: "Hatter. 'I deny it!' said."
+                          example: 'Queen, in a Little Bill It.'
                         description:
                           type: string
-                          example: 'Tempore qui deserunt consequuntur eos. Tempore voluptatem quia excepturi sint nulla. Saepe voluptatem et eos dolorem qui deleniti quis enim. Aut quod facere aut atque et quos commodi.'
+                          example: 'Sunt ea officia aut voluptas vero. Qui laudantium quaerat autem veniam libero. Nihil et illo aut repellat delectus aut culpa.'
                         due_date:
                           type: string
-                          example: '2024-09-22'
+                          example: '2024-09-15'
                         status:
                           type: string
                           example: pending
                         created_at:
                           type: string
-                          example: '2024-08-25T15:55:53.000000Z'
+                          example: '2024-08-26T11:34:28.000000Z'
                         updated_at:
                           type: string
-                          example: '2024-08-25T15:55:53.000000Z'
+                          example: '2024-08-26T11:34:28.000000Z'
                         user:
                           type: object
                           properties:
                             id:
                               type: integer
-                              example: 12
+                              example: 16
                             name:
                               type: string
-                              example: 'Prof. Dulce Spinka'
+                              example: 'Ms. Duane Boehm I'
                             email:
                               type: string
-                              example: rosanna.hackett@example.com
+                              example: delphine20@example.com
                             email_verified_at:
                               type: string
-                              example: '2024-08-25T15:55:53.000000Z'
+                              example: '2024-08-26T11:34:28.000000Z'
                             created_at:
                               type: string
-                              example: '2024-08-25T15:55:53.000000Z'
+                              example: '2024-08-26T11:34:28.000000Z'
                             updated_at:
                               type: string
-                              example: '2024-08-25T15:55:53.000000Z'
+                              example: '2024-08-26T11:34:28.000000Z'
       tags:
         - Task
-      security: []
     post:
       summary: ''
       operationId: postApiTasks
@@ -430,19 +398,19 @@ paths:
                 title:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: yrvtjionkpbln
+                  example: obhxck
                 description:
                   type: string
                   description: ''
-                  example: 'Sunt quod nihil maiores quis ea vel.'
+                  example: 'Est aut quia dolores officiis officiis atque eligendi.'
                 due_date:
                   type: string
                   description: 'Must be a valid date. Must be a date after or equal to <code>today</code>.'
-                  example: '2051-08-29'
+                  example: '2038-02-18'
                 status:
                   type: string
                   description: ''
-                  example: pending
+                  example: completed
                   enum:
                     - pending
                     - completed
@@ -452,7 +420,6 @@ paths:
                   example: null
               required:
                 - title
-      security: []
   '/api/tasks/{id}':
     get:
       summary: ''
@@ -467,14 +434,13 @@ paths:
               schema:
                 type: object
                 example:
-                  error: 'The route api/tasks/1 could not be found.'
+                  error: 'The route api/tasks/7 could not be found.'
                 properties:
                   error:
                     type: string
-                    example: 'The route api/tasks/1 could not be found.'
+                    example: 'The route api/tasks/7 could not be found.'
       tags:
         - Task
-      security: []
     put:
       summary: ''
       operationId: putApiTasksId
@@ -493,19 +459,19 @@ paths:
                 title:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: kqybcworuwtwwbwknyiwsaykx
+                  example: fcpzuikxvzvjhiazmyqe
                 description:
                   type: string
                   description: ''
-                  example: 'Perferendis laudantium natus nobis sint.'
+                  example: 'Deleniti autem itaque laboriosam ut nisi non nihil.'
                 due_date:
                   type: string
                   description: 'Must be a valid date. Must be a date after or equal to <code>today</code>.'
-                  example: '2112-06-20'
+                  example: '2103-09-21'
                 status:
                   type: string
                   description: ''
-                  example: pending
+                  example: completed
                   enum:
                     - pending
                     - completed
@@ -513,7 +479,6 @@ paths:
                   type: string
                   description: ''
                   example: null
-      security: []
     delete:
       summary: ''
       operationId: deleteApiTasksId
@@ -522,13 +487,12 @@ paths:
       responses: {  }
       tags:
         - Task
-      security: []
     parameters:
       -
         in: path
         name: id
         description: 'The ID of the task.'
-        example: 1
+        example: 7
         required: true
         schema:
           type: integer
@@ -540,8 +504,14 @@ tags:
     name: Category
     description: "\nAPIs to manage categories"
   -
-    name: Endpoints
-    description: ''
-  -
     name: Task
     description: "\nAPIs to managing task"
+components:
+  securitySchemes:
+    default:
+      type: http
+      scheme: bearer
+      description: 'You can retrieve your token by visiting your dashboard and clicking <b>Generate API token</b>.'
+security:
+  -
+    default: []
